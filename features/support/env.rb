@@ -18,7 +18,7 @@ end
 options = {
   'port' => 5500,
   'portboot' => 5051,
-  'sn' => '10.1.5.148:5555',
+  'sn' => '68a0f6deab89',
   'app' => 'app.apk',
   'appPackage' => 'com.testdevlab.notifyus'
 
@@ -27,7 +27,7 @@ server = Server.new(options)
 server.reinstall_app
 server.start
 # p `nmap -p 5551 localhost`
-sleep(10) # TODO replace with server up validaton
+sleep(30) # TODO replace with server up validaton
 # TODO move desired caps to config file
 desired_capabilities = {
   'deviceName' => options['sn'],
