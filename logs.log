@@ -1,0 +1,1136 @@
+[Appium] Welcome to Appium v1.6.3 (REV 2bf8c12f61343871efbd3b8182482d9703cf840e)
+[Appium] Non-default server args:
+[Appium]   port: 5500
+[Appium]   bootstrapPort: 5051
+[Appium]   udid: '68a0f6deab89'
+[Appium] Deprecated server args:
+[Appium]   -U,--udid => --default-capabilities '{"udid":"68a0f6deab89"}'
+[Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+[Appium]   udid: '68a0f6deab89'
+[Appium] Appium REST http interface listener started on 0.0.0.0:5500
+[HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"browserName":"","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":true,"nativeEvents":false,"rotatable":false,"deviceName":"68a0f6deab89","platformName":"Android","appActivity":"com.testdevlab.notifyus.activities.MainActivity","appPackage":"com.testdevlab.notifyus","noReset":"True"}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"browserName":"","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":true,"nativeEvents":false,"rotatable":false,"deviceName":"68a0f6deab89","platformName":"Android","appActivity":"com.testdevlab.notifyus.activities.MainActivity","appPackage":"com.testdevlab.notifyus","noReset":"True"},null,null,null,null]
+[Appium] Creating new AndroidDriver session
+[Appium] Capabilities:
+[Appium]   browserName: ''
+[Appium]   version: ''
+[Appium]   platform: 'ANY'
+[Appium]   javascriptEnabled: true
+[Appium]   cssSelectorsEnabled: true
+[Appium]   takesScreenshot: true
+[Appium]   nativeEvents: false
+[Appium]   rotatable: false
+[Appium]   deviceName: '68a0f6deab89'
+[Appium]   platformName: 'Android'
+[Appium]   appActivity: 'com.testdevlab.notifyus.activities.MainActivity'
+[Appium]   appPackage: 'com.testdevlab.notifyus'
+[Appium]   noReset: 'True'
+[Appium]   udid: '68a0f6deab89'
+[debug] [AndroidDriver] AndroidDriver version: 1.10.38
+[BaseDriver] Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] The following capabilities were provided, but are not recognized by appium: version, platform, javascriptEnabled, cssSelectorsEnabled, takesScreenshot, nativeEvents, rotatable.
+[BaseDriver] Session created with session id: 878a1218-217a-420e-bd00-5c5abbcfad0a
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_111
+[ADB] Checking whether adb is present
+[ADB] Using adb from /home/vodka/Android/Sdk/platform-tools/adb
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[AndroidDriver] Using device: 68a0f6deab89
+[ADB] Checking whether adb is present
+[ADB] Using adb from /home/vodka/Android/Sdk/platform-tools/adb
+[debug] [ADB] Setting device id to 68a0f6deab89
+[AndroidDriver] App file was not listed, instead we're going to run com.testdevlab.notifyus directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/home/vodka/Android/Sdk/platform-tools/adb' with args: ["-P",5037,"-s","68a0f6deab89","shell","pm","list","packages","com.testdevlab.notifyus"]
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running '/home/vodka/Android/Sdk/platform-tools/adb' with args: ["-P",5037,"-s","68a0f6deab89","wait-for-device"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/home/vodka/Android/Sdk/platform-tools/adb' with args: ["-P",5037,"-s","68a0f6deab89","shell","echo","ping"]
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Running '/home/vodka/Android/Sdk/platform-tools/adb' with args: ["-P",5037,"-s","68a0f6deab89","install","/home/vodka/.linuxbrew/lib/node_modules/appium/node_modules/io.appium.settings/bin/settings_apk-debug.apk"]
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running '/home/vodka/Android/Sdk/platform-tools/adb' with args: ["-P",5037,"-s","68a0f6deab89","install","/home/vodka/.linuxbrew/lib/node_modules/appium/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
+[ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/home/vodka/Android/Sdk/platform-tools/adb' with args: ["-P",5037,"-s","68a0f6deab89","shell","getprop","ro.build.version.release"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/home/vodka/Android/Sdk/platform-tools/adb' with args: ["-P",5037,"-s","68a0f6deab89","shell","dumpsys","window"]
+[AndroidDriver] Screen already unlocked, doing nothing
+[AndroidDriver] No app sent in, not parsing package/activity
+[debug] [AndroidDriver] No app capability. Assuming it is already on the device
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 5051 to device: 4724
+[debug] [ADB] Running '/home/vodka/Android/Sdk/platform-tools/adb' with args: ["-P",5037,"-s","68a0f6deab89","forward","tcp:5051","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running '/home/vodka/Android/Sdk/platform-tools/adb' with args: ["-P",5037,"-s","68a0f6deab89","push","/home/vodka/.linuxbrew/lib/node_modules/appium/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar","/data/local/tmp/"]
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/home/vodka/Android/Sdk/platform-tools/adb' with args: ["-P",5037,"-s","68a0f6deab89","shell","ps"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","68a0f6deab89","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.testdevlab.notifyus","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+[debug] [UiAutomator] Moving to state 'online'
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/home/vodka/Android/Sdk/platform-tools/adb' with args: ["-P",5037,"-s","68a0f6deab89","shell","getprop","ro.build.version.sdk"]
+[debug] [ADB] Device API level: 19
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/home/vodka/Android/Sdk/platform-tools/adb' with args: ["-P",5037,"-s","68a0f6deab89","shell","am","start","-W","-n","com.testdevlab.notifyus/com.testdevlab.notifyus.activities.MainActivity","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[Appium] New AndroidDriver session created successfully, session 878a1218-217a-420e-bd00-5c5abbcfad0a added to master session list
+[debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"ANY","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"browserName":"","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":true,"nativeEvents":false,"rotatable":false,"deviceName":"68a0f6deab89","platformName":"Android","appActivity":"com.testdevlab.notifyus.activities.MainActivity","appPackage":"com.testdevlab.notifyus","noReset":true,"udid":"68a0f6deab89"},"browserName":"","version":"","cssSelectorsEnabled":true,"nativeEvents":false,"rotatable":false,"deviceName":"68a0f6deab89","platformName":"Android","appActivity":"com.testdevlab.notifyus.activities.MainActivity","appPackage":"com.testdevlab.notifyus","noReset":true,"udid":"68a0f6deab89","deviceUDID":"68a0f6deab89","platformVersion":"4.4.4"}
+[HTTP] <-- POST /wd/hub/session 200 11185 ms - 974 
+[HTTP] --> GET /wd/hub/status {}
+[debug] [MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[debug] [MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.6.3","revision":"2bf8c12f61343871efbd3b8182482d9703cf840e"}}
+[HTTP] <-- GET /wd/hub/status 200 12 ms - 121 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/timeouts/implicit_wait {"ms":0}
+[debug] [MJSONWP] Calling AppiumDriver.implicitWait() with args: [0,"878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Set implicit wait to 0ms
+[debug] [MJSONWP] Responding to client with driver.implicitWait() result: null
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/timeouts/implicit_wait 200 31 ms - 76 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/elements {"using":"class name","value":"android.widget.Button"}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: ["class name","android.widget.Button","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"class name","selector":"android.widget.Button","context":"","multiple":true}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"class name","selector":"android.widget.Button","context":"","multiple":true}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'android.widget.Button' using 'CLASS_NAME' with the contextId: '' multiple: true
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.Button]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.Button]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.Button, INSTANCE=0]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (1)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.Button, INSTANCE=1]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":[{"ELEMENT":"1"}],"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{"ELEMENT":"1"}]
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/elements 200 1223 ms - 89 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/elements {"using":"class name","value":"android.widget.ImageButton"}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: ["class name","android.widget.ImageButton","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"class name","selector":"android.widget.ImageButton","context":"","multiple":true}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"class name","selector":"android.widget.ImageButton","context":"","multiple":true}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'android.widget.ImageButton' using 'CLASS_NAME' with the contextId: '' multiple: true
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.ImageButton]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.ImageButton]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.ImageButton, INSTANCE=0]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'android.widget.ImageButton' using 'CLASS_NAME' with the contextId: '' multiple: true
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.ImageButton]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.ImageButton]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.ImageButton, INSTANCE=0]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":[],"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: []
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/elements 200 56 ms - 74 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element {"using":"-android uiautomator","value":"new UiSelector().className(android.widget.Button).instance(0);new UiSelector().className(android.widget.ImageButton).instance(0);"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().className(android.widget.Button).instance(0);new UiSelector().className(android.widget.ImageButton).instance(0);","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(android.widget.Button).instance(0);new UiSelector().className(android.widget.ImageButton).instance(0);","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(android.widget.Button).instance(0);new UiSelector().className(android.widget.ImageButton).instance(0);","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().className(android.widget.Button).instance(0);new UiSelector().className(android.widget.ImageButton).instance(0);' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className(android.widget.Button).instance(0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: android.widget.Button
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: android.widget.Button
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className(android.widget.ImageButton).instance(0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: android.widget.ImageButton
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"2"}
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element 200 132 ms - 87 
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: android.widget.ImageButton
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.Button, INSTANCE=0]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"2"},"status":0}
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/2/click {"{}":""}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["2","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"2"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"2"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/2/click 200 687 ms - 76 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element {"using":"id","value":"content"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","content","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"content","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"content","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'content' using 'ID' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.testdevlab.notifyus:id/content]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/content]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"3"},"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"3"}
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element 200 702 ms - 87 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element {"using":"id","value":"close_intro"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","close_intro","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"close_intro","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"close_intro","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'close_intro' using 'ID' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.testdevlab.notifyus:id/close_intro]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"4"},"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"4"}
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element 200 55 ms - 87 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/4/click {"{}":""}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["4","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"4"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"4"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/4/click 200 346 ms - 76 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Izveidot filtru\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Izveidot filtru\");"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Izveidot filtru\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Izveidot filtru\");","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Izveidot filtru\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Izveidot filtru\");","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Izveidot filtru\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Izveidot filtru\");","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().className("android.widget.TextView").descriptionContains("Izveidot filtru");new UiSelector().className("android.widget.TextView").textContains("Izveidot filtru");' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className("android.widget.TextView").descriptionContains("Izveidot filtru")
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Izveidot filtru"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className("android.widget.TextView").textContains("Izveidot filtru")
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Izveidot filtru"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, CONTAINS_DESCRIPTION=Izveidot filtru]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CONTAINS_TEXT=Izveidot filtru, CLASS=android.widget.TextView]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"5"},"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"5"}
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element 200 1394 ms - 87 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/5/displayed {}
+[debug] [MJSONWP] Calling AppiumDriver.elementDisplayed() with args: ["5","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"5"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"5"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getAttribute
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"true","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.elementDisplayed() result: true
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/5/displayed 200 59 ms - 76 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Izveidot filtru\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Izveidot filtru\");"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Izveidot filtru\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Izveidot filtru\");","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Izveidot filtru\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Izveidot filtru\");","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Izveidot filtru\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Izveidot filtru\");","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().className("android.widget.TextView").descriptionContains("Izveidot filtru");new UiSelector().className("android.widget.TextView").textContains("Izveidot filtru");' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className("android.widget.TextView").descriptionContains("Izveidot filtru")
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Izveidot filtru"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className("android.widget.TextView").textContains("Izveidot filtru")
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Izveidot filtru"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, CONTAINS_DESCRIPTION=Izveidot filtru]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CONTAINS_TEXT=Izveidot filtru, CLASS=android.widget.TextView]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"6"},"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"6"}
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element 200 285 ms - 87 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/6/displayed {}
+[debug] [MJSONWP] Calling AppiumDriver.elementDisplayed() with args: ["6","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"6"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"6"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getAttribute
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"true","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.elementDisplayed() result: true
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/6/displayed 200 35 ms - 76 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/elements {"using":"id","value":"main_row_text"}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: ["id","main_row_text","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"main_row_text","context":"","multiple":true}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"main_row_text","context":"","multiple":true}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'main_row_text' using 'ID' with the contextId: '' multiple: true
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.testdevlab.notifyus:id/main_row_text]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.testdevlab.notifyus:id/main_row_text]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.testdevlab.notifyus:id/main_row_text]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (1)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.testdevlab.notifyus:id/main_row_text]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (2)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=2, RESOURCE_ID=com.testdevlab.notifyus:id/main_row_text]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (3)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=3, RESOURCE_ID=com.testdevlab.notifyus:id/main_row_text]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=android:id/main_row_text]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=android:id/main_row_text]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=android:id/main_row_text]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=main_row_text]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=main_row_text]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=main_row_text]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=main_row_text]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[DESCRIPTION=main_row_text]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[DESCRIPTION=main_row_text, INSTANCE=0]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":[{"ELEMENT":"7"},{"ELEMENT":"8"},{"ELEMENT":"9"}],"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{"ELEMENT":"7"},{"ELEMENT":"8"},{"ELEMENT":"9"}]
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/elements 200 280 ms - 121 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/7/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["7","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"7"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"7"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Nekustamie īpašumi","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Nekustamie īpašumi"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/7/text 200 65 ms - 94 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/7/click {"{}":""}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["7","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"7"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"7"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/7/click 200 483 ms - 76 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Nekustamie īpašumi\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Nekustamie īpašumi\");"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Nekustamie īpašumi\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Nekustamie īpašumi\");","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Nekustamie īpašumi\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Nekustamie īpašumi\");","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Nekustamie īpašumi\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Nekustamie īpašumi\");","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().className("android.widget.TextView").descriptionContains("Nekustamie īpašumi");new UiSelector().className("android.widget.TextView").textContains("Nekustamie īpašumi");' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className("android.widget.TextView").descriptionContains("Nekustamie īpašumi")
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Nekustamie īpašumi"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className("android.widget.TextView").textContains("Nekustamie īpašumi")
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Nekustamie īpašumi"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, CONTAINS_DESCRIPTION=Nekustamie īpašumi]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CONTAINS_TEXT=Nekustamie īpašumi, CLASS=android.widget.TextView]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"10"},"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"10"}
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element 200 1724 ms - 88 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/10/displayed {}
+[debug] [MJSONWP] Calling AppiumDriver.elementDisplayed() with args: ["10","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"10"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"10"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getAttribute
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"true","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.elementDisplayed() result: true
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/10/displayed 200 46 ms - 76 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element {"using":"id","value":"category_name"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","category_name","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"category_name","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"category_name","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'category_name' using 'ID' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"11"},"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"11"}
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element 200 83 ms - 88 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/11/displayed {}
+[debug] [MJSONWP] Calling AppiumDriver.elementDisplayed() with args: ["11","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"11"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"11"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getAttribute
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"true","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.elementDisplayed() result: true
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/11/displayed 200 76 ms - 76 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/elements {"using":"id","value":"category_name"}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: ["id","category_name","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"category_name","context":"","multiple":true}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"category_name","context":"","multiple":true}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'category_name' using 'ID' with the contextId: '' multiple: true
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (1)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (2)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=2, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (3)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=3, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (4)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=4, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (5)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=5, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (6)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=6, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (7)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=7, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=android:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=android:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=android:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[DESCRIPTION=category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[DESCRIPTION=category_name, INSTANCE=0]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":[{"ELEMENT":"12"},{"ELEMENT":"13"},{"ELEMENT":"14"},{"ELEMENT":"15"},{"ELEMENT":"16"},{"ELEMENT":"17"},{"ELEMENT":"18"}],"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{"ELEMENT":"12"},{"ELEMENT":"13"},{"ELEMENT":"14"},{"ELEMENT":"15"},{"ELEMENT":"16"},{"ELEMENT":"17"},{"ELEMENT":"18"}]
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/elements 200 548 ms - 192 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/12/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["12","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"12"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"12"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Dzīvokļi","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Dzīvokļi"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/12/text 200 60 ms - 84 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/13/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["13","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"13"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"13"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Mājas, vasarnīcas","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Mājas, vasarnīcas"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/13/text 200 49 ms - 93 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/14/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["14","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"14"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"14"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Lauku viensētas","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Lauku viensētas"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/14/text 200 50 ms - 90 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/15/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["15","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"15"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"15"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Telpas","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Telpas"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/15/text 200 48 ms - 80 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/16/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["16","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"16"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"16"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Biroji","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Biroji"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/16/text 200 45 ms - 80 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/17/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["17","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"17"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"17"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Zeme","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Zeme"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/17/text 200 61 ms - 78 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/17/click {"{}":""}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["17","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"17"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"17"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/17/click 200 442 ms - 76 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Zeme\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Zeme\");"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Zeme\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Zeme\");","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Zeme\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Zeme\");","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Zeme\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Zeme\");","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().className("android.widget.TextView").descriptionContains("Zeme");new UiSelector().className("android.widget.TextView").textContains("Zeme");' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className("android.widget.TextView").descriptionContains("Zeme")
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Zeme"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className("android.widget.TextView").textContains("Zeme")
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Zeme"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, CONTAINS_DESCRIPTION=Zeme]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CONTAINS_TEXT=Zeme, CLASS=android.widget.TextView]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"19"},"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"19"}
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element 200 1829 ms - 88 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/19/displayed {}
+[debug] [MJSONWP] Calling AppiumDriver.elementDisplayed() with args: ["19","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"19"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"19"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getAttribute
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"true","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.elementDisplayed() result: true
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/19/displayed 200 44 ms - 76 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element {"using":"id","value":"category_name"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","category_name","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"category_name","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"category_name","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'category_name' using 'ID' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"20"},"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"20"}
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element 200 47 ms - 88 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/20/displayed {}
+[debug] [MJSONWP] Calling AppiumDriver.elementDisplayed() with args: ["20","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"20"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"20"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getAttribute
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"true","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.elementDisplayed() result: true
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/20/displayed 200 39 ms - 76 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/elements {"using":"id","value":"category_name"}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: ["id","category_name","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"category_name","context":"","multiple":true}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"category_name","context":"","multiple":true}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'category_name' using 'ID' with the contextId: '' multiple: true
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (1)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (2)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=2, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (3)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=3, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (4)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=4, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (5)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=5, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (6)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=6, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (7)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=7, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (8)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=8, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (9)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=9, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=android:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=android:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=android:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[DESCRIPTION=category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[DESCRIPTION=category_name, INSTANCE=0]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":[{"ELEMENT":"21"},{"ELEMENT":"22"},{"ELEMENT":"23"},{"ELEMENT":"24"},{"ELEMENT":"25"},{"ELEMENT":"26"},{"ELEMENT":"27"},{"ELEMENT":"28"},{"ELEMENT":"29"}],"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{"ELEMENT":"21"},{"ELEMENT":"22"},{"ELEMENT":"23"},{"ELEMENT":"24"},{"ELEMENT":"25"},{"ELEMENT":"26"},{"ELEMENT":"27"},{"ELEMENT":"28"},{"ELEMENT":"29"}]
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/elements 200 681 ms - 226 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/21/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["21","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"21"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"21"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Rīga","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Rīga"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/21/text 200 40 ms - 79 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/22/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["22","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"22"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"22"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Jūrmala","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Jūrmala"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/22/text 200 61 ms - 82 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/23/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["23","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"23"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"23"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Rīgas rajons","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Rīgas rajons"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/23/text 200 55 ms - 87 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/24/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["24","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"24"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"24"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Aizkraukle un rajons","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Aizkraukle un rajons"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/24/text 200 44 ms - 94 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/25/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["25","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"25"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"25"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Alūksne un rajons","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Alūksne un rajons"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/25/text 200 45 ms - 92 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/26/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["26","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"26"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"26"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Balvi un rajons","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Balvi un rajons"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/26/text 200 38 ms - 89 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/27/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["27","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"27"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"27"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Bauska un rajons","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Bauska un rajons"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/27/text 200 48 ms - 90 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/28/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["28","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"28"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"28"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Cēsis un rajons","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Cēsis un rajons"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/28/text 200 43 ms - 90 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/29/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["29","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"29"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"29"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Daugavpils un rajons","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Daugavpils un rajons"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/29/text 200 57 ms - 94 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element {"using":"-android uiautomator","value":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text(\"Ventspils un rajons\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\"Ventspils un rajons\").instance(0));"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text(\"Ventspils un rajons\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\"Ventspils un rajons\").instance(0));","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text(\"Ventspils un rajons\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\"Ventspils un rajons\").instance(0));","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text(\"Ventspils un rajons\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\"Ventspils un rajons\").instance(0));","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text("Ventspils un rajons").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description("Ventspils un rajons").instance(0));' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing scrollable: new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text("Ventspils un rajons").instance(0))
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: boolean arg: true
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException args: new UiSelector().text("Ventspils un rajons").instance(0),
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable coerce type: class com.android.uiautomator.core.UiObject arg: new UiSelector().text("Ventspils un rajons").instance(0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Ventspils un rajons"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Method name: scrollIntoView
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Setting uiObject for scrollIntoView
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException with: com.android.uiautomator.core.UiObject@41a32748
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Invoke complete.
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing scrollable: new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description("Ventspils un rajons").instance(0))
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: boolean arg: true
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException args: new UiSelector().description("Ventspils un rajons").instance(0),
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable coerce type: class com.android.uiautomator.core.UiObject arg: new UiSelector().description("Ventspils un rajons").instance(0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Ventspils un rajons"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Method name: scrollIntoView
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Setting uiObject for scrollIntoView
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException with: com.android.uiautomator.core.UiObject@41a1eb08
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Invoke complete.
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=Ventspils un rajons, INSTANCE=0]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"30"},"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"30"}
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element 200 15577 ms - 88 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/30/click {"{}":""}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["30","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"30"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"30"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/30/click 200 419 ms - 76 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Ventspils un rajons\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Ventspils un rajons\");"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Ventspils un rajons\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Ventspils un rajons\");","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Ventspils un rajons\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Ventspils un rajons\");","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Ventspils un rajons\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Ventspils un rajons\");","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().className("android.widget.TextView").descriptionContains("Ventspils un rajons");new UiSelector().className("android.widget.TextView").textContains("Ventspils un rajons");' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className("android.widget.TextView").descriptionContains("Ventspils un rajons")
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Ventspils un rajons"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className("android.widget.TextView").textContains("Ventspils un rajons")
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Ventspils un rajons"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, CONTAINS_DESCRIPTION=Ventspils un rajons]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CONTAINS_TEXT=Ventspils un rajons, CLASS=android.widget.TextView]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"31"},"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"31"}
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element 200 2049 ms - 88 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/31/displayed {}
+[debug] [MJSONWP] Calling AppiumDriver.elementDisplayed() with args: ["31","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"31"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"31"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getAttribute
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"true","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.elementDisplayed() result: true
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/31/displayed 200 36 ms - 76 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element {"using":"id","value":"category_name"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","category_name","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"category_name","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"category_name","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'category_name' using 'ID' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"32"},"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"32"}
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element 200 35 ms - 88 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/32/displayed {}
+[debug] [MJSONWP] Calling AppiumDriver.elementDisplayed() with args: ["32","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"32"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"32"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getAttribute
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"true","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.elementDisplayed() result: true
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/32/displayed 200 31 ms - 76 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/elements {"using":"id","value":"category_name"}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: ["id","category_name","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"category_name","context":"","multiple":true}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"category_name","context":"","multiple":true}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'category_name' using 'ID' with the contextId: '' multiple: true
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (1)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (2)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=2, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (3)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=3, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (4)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=4, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (5)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=5, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (6)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=6, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (7)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=7, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (8)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=8, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (9)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=9, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=android:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=android:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=android:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[DESCRIPTION=category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[DESCRIPTION=category_name, INSTANCE=0]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":[{"ELEMENT":"33"},{"ELEMENT":"34"},{"ELEMENT":"35"},{"ELEMENT":"36"},{"ELEMENT":"37"},{"ELEMENT":"38"},{"ELEMENT":"39"},{"ELEMENT":"40"},{"ELEMENT":"41"}],"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{"ELEMENT":"33"},{"ELEMENT":"34"},{"ELEMENT":"35"},{"ELEMENT":"36"},{"ELEMENT":"37"},{"ELEMENT":"38"},{"ELEMENT":"39"},{"ELEMENT":"40"},{"ELEMENT":"41"}]
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/elements 200 466 ms - 226 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/33/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["33","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"33"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"33"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Visi","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Visi"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/33/text 200 37 ms - 78 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/33/click {"{}":""}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["33","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"33"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"33"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/33/click 200 374 ms - 76 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Darbība\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Darbība\");"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Darbība\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Darbība\");","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Darbība\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Darbība\");","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.TextView\").descriptionContains(\"Darbība\");new UiSelector().className(\"android.widget.TextView\").textContains(\"Darbība\");","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().className("android.widget.TextView").descriptionContains("Darbība");new UiSelector().className("android.widget.TextView").textContains("Darbība");' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className("android.widget.TextView").descriptionContains("Darbība")
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Darbība"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className("android.widget.TextView").textContains("Darbība")
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "android.widget.TextView"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Darbība"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, CONTAINS_DESCRIPTION=Darbība]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CONTAINS_TEXT=Darbība, CLASS=android.widget.TextView]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"42"},"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"42"}
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element 200 2061 ms - 88 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/42/displayed {}
+[debug] [MJSONWP] Calling AppiumDriver.elementDisplayed() with args: ["42","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"42"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"42"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getAttribute
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"true","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.elementDisplayed() result: true
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/42/displayed 200 53 ms - 76 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element {"using":"id","value":"category_name"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","category_name","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"category_name","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"category_name","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'category_name' using 'ID' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"43"},"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"43"}
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element 200 128 ms - 88 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/43/displayed {}
+[debug] [MJSONWP] Calling AppiumDriver.elementDisplayed() with args: ["43","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"43"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"43"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getAttribute
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"true","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.elementDisplayed() result: true
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/43/displayed 200 44 ms - 76 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/elements {"using":"id","value":"category_name"}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: ["id","category_name","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"category_name","context":"","multiple":true}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"category_name","context":"","multiple":true}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'category_name' using 'ID' with the contextId: '' multiple: true
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (1)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (2)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=2, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (3)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=3, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (4)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=4, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (5)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=5, RESOURCE_ID=com.testdevlab.notifyus:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=android:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=android:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=android:id/category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[DESCRIPTION=category_name]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[DESCRIPTION=category_name, INSTANCE=0]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":[{"ELEMENT":"44"},{"ELEMENT":"45"},{"ELEMENT":"46"},{"ELEMENT":"47"},{"ELEMENT":"48"}],"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{"ELEMENT":"44"},{"ELEMENT":"45"},{"ELEMENT":"46"},{"ELEMENT":"47"},{"ELEMENT":"48"}]
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/elements 200 204 ms - 158 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/44/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["44","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"44"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"44"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Pārdod","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Pārdod"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/44/text 200 40 ms - 81 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/45/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["45","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"45"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"45"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Pērk","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Pērk"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/45/text 200 51 ms - 79 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/46/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["46","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"46"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"46"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Izīrē","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Izīrē"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/46/text 200 37 ms - 81 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/47/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["47","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"47"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"47"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Īrē","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Īrē"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/47/text 200 37 ms - 79 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/48/text {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["48","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"48"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"48"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"Visi","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Visi"
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/48/text 200 37 ms - 78 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/48/click {"{}":""}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["48","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"48"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"48"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/48/click 200 393 ms - 76 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element {"using":"id","value":"parameter_body_holder"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","parameter_body_holder","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"parameter_body_holder","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"parameter_body_holder","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'parameter_body_holder' using 'ID' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.testdevlab.notifyus:id/parameter_body_holder]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"49"},"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"49"}
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element 200 881 ms - 88 
+[HTTP] --> GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/49/displayed {}
+[debug] [MJSONWP] Calling AppiumDriver.elementDisplayed() with args: ["49","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"49"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"49"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getAttribute
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"true","status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.elementDisplayed() result: true
+[HTTP] <-- GET /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/49/displayed 200 566 ms - 76 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element {"using":"id","value":"save_filter"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","save_filter","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"save_filter","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"save_filter","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'save_filter' using 'ID' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.testdevlab.notifyus:id/save_filter]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"50"},"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"50"}
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element 200 73 ms - 88 
+[HTTP] --> POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/50/click {"{}":""}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["50","878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"50"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"50"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] <-- POST /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a/element/50/click 200 540 ms - 76 
+[HTTP] --> DELETE /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a {}
+[debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["878a1218-217a-420e-bd00-5c5abbcfad0a"]
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/home/vodka/Android/Sdk/platform-tools/adb' with args: ["-P",5037,"-s","68a0f6deab89","shell","am","force-stop","com.testdevlab.notifyus"]
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/home/vodka/Android/Sdk/platform-tools/adb' with args: ["-P",5037,"-s","68a0f6deab89","shell","input","keyevent",3]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/home/vodka/Android/Sdk/platform-tools/adb' with args: ["-P",5037,"-s","68a0f6deab89","shell","ps"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/home/vodka/Android/Sdk/platform-tools/adb' with args: ["-P",5037,"-s","68a0f6deab89","shell","am","force-stop","io.appium.unlock"]
+[debug] [Logcat] Stopping logcat capture
+[debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[Appium] Removing session 878a1218-217a-420e-bd00-5c5abbcfad0a from our master session list
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /wd/hub/session/878a1218-217a-420e-bd00-5c5abbcfad0a 200 2459 ms - 76 
