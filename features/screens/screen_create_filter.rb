@@ -10,6 +10,8 @@ class ScreenCreateFilter < ScreenBase
     @driver.wait { @driver.text(@title[:value]).displayed? }
   end
 
+
+
   def select_row(category_name)
     @driver.find_elements(@rows[:type], @rows[:value]).each do |row|
       if row.text == category_name
