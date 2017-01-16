@@ -33,3 +33,7 @@ end
 Given /^I create filled property filter$/ do
  @tests.test_add_filter.create_filled_filter
 end
+
+Given /^I check created filter$/ do
+ @tests.test_check_created_filter.check_created_filter
+end

@@ -29,11 +29,14 @@ class TestAddFilter
     @screens.screen_select_sub_category.select_sub_category 'Visi'
   end
 
-  def submit_filled_filter_parameters
+  def submit_filter_values
     @screens.screen_set_filter_parameters.visible?
     @screens.screen_set_filter_parameters.set_name('Filter 1')
     @screens.screen_set_filter_parameters.add_values('CENA (EUR)','1','1000')
     @screens.screen_set_filter_parameters.add_values('PLATĪBA (M2)','1','3000')
+  end
+
+  def submit_filter
     @screens.screen_set_filter_parameters.save_filter
   end
 
@@ -43,6 +46,9 @@ class TestAddFilter
     select_district
     select_town
     select_action
-    submit_filled_filter_parameters
+    submit_filter_values
+    submit_filter
+    sleep 5
   end
+
 end
