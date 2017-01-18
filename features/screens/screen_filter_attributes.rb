@@ -1,3 +1,7 @@
+
+require "test/unit/assertions"
+include Test::Unit::Assertions
+
 class ScreenFilterAttributes < ScreenBase
   attr_accessor :driver
   def initialize(driver)
@@ -8,14 +12,21 @@ class ScreenFilterAttributes < ScreenBase
   end
 
   def check_values(sub_name,first_value,second_value)
-
+    @found = false
     @driver.find_elements(
       @parameter_holders[:type], @parameter_holders[:value]
     ).each do |row|
       next unless row.find_element(:id,'parameter_name').text == sub_name && row.find_element(:id,'left_param').text == first_value && row.find_element(:id,'right_param').text == second_value
-      
+      @found = true
       break
     end
+
+    if @found
+      assert(true,"SUCCESS\n")
+    else
+      assert(false,"FAIL\n")
+    end
+
   end
 
 
