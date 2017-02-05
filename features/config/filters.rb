@@ -11,8 +11,13 @@ class Filter
       @sub_categories.push sub_cat
     end
     @parameters = []
-    config['parameters'].each do |parameter|
-      @parameters.push parameter
+
+    if config['parameters'] == nil
+      print "\nNo parameters\n"
+    else
+      config['parameters'].each do |parameter|
+        @parameters.push parameter
+      end
     end
   end
 
@@ -30,6 +35,3 @@ class Filter
     print "\n\n"
   end
 end
-filter = Filter.new('property_positive')
-
-filter.print_properties

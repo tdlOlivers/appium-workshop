@@ -19,9 +19,11 @@ class ScreenSetFilterParameters < ScreenBase
   end
 
   def set_name(text_name)
+    @driver.wait{@driver.find_element(@filter_name[:type], @filter_name[:value]).displayed?}
     @driver.find_element(
       @filter_name[:type], @filter_name[:value]
     ).send_keys(text_name)
+    @driver.hide_keyboard
   end
 
   def set_parameter(parameter_hash)

@@ -30,7 +30,10 @@ Given /^I have opened create filter screen$/ do
   @tests.test_intro.close_intro
 end
 
+When(/^I create filter "([^"]*)"$/) do |arg1|
+ @tests.test_add_filter.create_filter(arg1)
+end
 
-Given /^I create property filter$/ do
- @tests.test_add_filter.create_filter
+Then(/^I return to create filter screen$/) do
+  @tests.test_add_filter.return_to_main_menu
 end
