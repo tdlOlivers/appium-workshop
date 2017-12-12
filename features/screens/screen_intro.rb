@@ -12,6 +12,6 @@ class ScreenIntro < ScreenBase
   end
 
   def close_intro
-    @driver.find_element(@button_to_app[:type], @button_to_app[:value]).click
+    #@driver.find_element(@button_to_app[:type], @button_to_app[:value]).click
   end
 end
